@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SupportTickets.Models.Database.Ticket>
+@inject SignInManager<SupportTickets.Models.Database.User> signInManger;
+
+@if (User.IsInRole("Edit"))
+{
+    <p>
+        <a asp-action="CreateTicketForm">Create New</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Assignee)
+            </th>
+            <th>
+                Options
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Assignee)
+                </td>
+                <td>
+                    @if (User.IsInRole("Edit"))
+                    {
+                        <a asp-action="UpdateTicket" asp-route-id="@item.Id">Update |</a>
+                        <a asp-action="DeleteTicket" asp-route-id="@item.Id">Delete |</a>
+                    }
+                    <a asp-action="ViewTicket" asp-route-id="@item.Id">View</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+            </tr>
+        }
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td>
+                    No Tickets Added
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
