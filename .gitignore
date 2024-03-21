@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /SupportTickets/Migrations/20240225144934_AddUserSeed.cs
+/SupportTickets/Migrations/20240225144934_AddUserSeed.Designer.cs
