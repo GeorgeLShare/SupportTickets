@@ -30,7 +30,7 @@ jobs:
 
         # New step to copy .sql file into the output directory
       - name: Copy sqllite.sql file
-        run: cp ${{env.DOTNET_ROOT}}/sqllite.db ${{env.DOTNET_ROOT}}/myapp/
+        run: cp ${{env.DOTNET_ROOT}}/sqlite.db ${{env.DOTNET_ROOT}}/myapp/
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
