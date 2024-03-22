@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportTickets", "SupportTickets\SupportTickets.csproj", "{0CD3B4F3-FD2E-4D4B-BB34-4BF566E52E4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTickets", "SupportTickets\SupportTickets.csproj", "{0CD3B4F3-FD2E-4D4B-BB34-4BF566E52E4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportTickets.UnitTests", "SupportTickets.UnitTests\SupportTickets.UnitTests.csproj", "{5D6E69DA-F030-4255-B9D2-0CD06864AD78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0CD3B4F3-FD2E-4D4B-BB34-4BF566E52E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CD3B4F3-FD2E-4D4B-BB34-4BF566E52E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CD3B4F3-FD2E-4D4B-BB34-4BF566E52E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6E69DA-F030-4255-B9D2-0CD06864AD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6E69DA-F030-4255-B9D2-0CD06864AD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6E69DA-F030-4255-B9D2-0CD06864AD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6E69DA-F030-4255-B9D2-0CD06864AD78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
